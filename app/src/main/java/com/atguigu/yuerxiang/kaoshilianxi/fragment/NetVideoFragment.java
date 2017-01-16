@@ -32,11 +32,6 @@ public class NetVideoFragment extends BaseFragment {
     }
 
 
-    @Override
-    public void onRefrshData() {
-        super.onRefrshData();
-        textView.setText("网络视频刷新");
-//        Log.e("TAG","onHiddenChanged。。"+this.toString());
-    }
+
 
 }

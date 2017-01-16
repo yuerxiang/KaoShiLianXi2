@@ -164,4 +164,57 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
+  /*  private RadioGroup rg_main;
+    *//**//**
+     * 各个页面的Fragment
+     *//*
+    private ArrayList<BaseFragment> baseFragments;
+
+    *//**
+     * 不同Fragment在列表中的位置
+     *//*
+    private int position = 0;
+    private Fragment mContent;
+
+    SensorManager sensorManager;
+    JCVideoPlayer.JCAutoFullscreenListener sensorEventListener;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initView();
+        initFragment();
+        setListener();
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensorEventListener = new JCVideoPlayer.JCAutoFullscreenListener();
+
+    }
+
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Sensor accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener(sensorEventListener, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(sensorEventListener);
+        JCVideoPlayer.releaseAllVideos();
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        if (JCVideoPlayer.backPress()) {
+            return;
+        }
+        super.onBackPressed();
+    }
+*/
+
+
 }

@@ -1,1 +1,1 @@
-include ':app', 'xUtils3-masterkaoshi', ':xutils'
+include ':app', 'xUtils3-masterkaoshi', ':xutils', ':PhotoView_library'
