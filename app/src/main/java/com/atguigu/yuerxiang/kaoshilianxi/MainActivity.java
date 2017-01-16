@@ -143,8 +143,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e("TAG","onDestroy");
     }
 
-
-    /**
+   /**
      * 解决安卓6.0以上版本不能读取外部存储权限的问题
      * @param activity
      * @return
@@ -164,16 +163,14 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+/*
 
-  /*  private RadioGroup rg_main;
-    *//**//**
-     * 各个页面的Fragment
-     *//*
+ private RadioGroup rg_main;
+
+
     private ArrayList<BaseFragment> baseFragments;
 
-    *//**
-     * 不同Fragment在列表中的位置
-     *//*
+
     private int position = 0;
     private Fragment mContent;
 
@@ -214,7 +211,8 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onBackPressed();
     }
-*/
 
+
+*/
 
 }
