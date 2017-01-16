@@ -21,11 +21,13 @@ public class LocalVideoFragment extends BaseFragment {
         textView.setTextColor(Color.RED);
         textView.setGravity(Gravity.CENTER);
         textView.setTextSize(25);
+
         return textView;
     }
 
     @Override
     public void initData() {
+
         super.initData();
         Log.e("TAG","本地视频数据初始化了。。");
         textView.setText("本地视频");
